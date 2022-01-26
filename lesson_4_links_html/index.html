@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .icon {
+        width: 40px;
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://stepanets-vadym.github.io/home-work/">Link to "Main Page"</a>
+    <header>
+      <h1>HTML5 Семантичні елементи</h1>
+      <nav>
+        <ul>
+          <li><a href="#video">День відкритих дверей</a></li>
+          <li><a href="#resum">Резюме з першого уроку</a></li>
+          <li><a href="#new">Нові семантичні елементи</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <p>
+          Семантичний елемент чітко описує його значення як для браузера, так і
+          для розробника.
+        </p>
+        <p>
+          Приклади не <b>семантичних</b> елементів: div і span- нічого не
+          говорить про його вміст.
+        </p>
+        <p>
+          Приклади <b>семантичних</b> елементів: form, table і article - чітко
+          визначає його зміст.
+        </p>
+        <h2>Підтримка браузерів</h2>
+        <img class="icon" src="./img/free-icon-chrome-183316.png" alt="icon" />
+        <img
+          class="icon"
+          src="./img/free-icon-explorer-183317.png"
+          alt="icon"
+        />
+        <img class="icon" src="./img/free-icon-mozilla-183320.png" alt="icon" />
+        <img class="icon" src="./img/free-icon-safari-183323.png" alt="icon" />
+        <img class="icon" src="./img/free-icon-opera-183322.png" alt="icon" />
+        <p>
+          Семантичні елементи HTML5 підтримуються у всіх сучасних браузерах.
+        </p>
+        <p>
+          Крім того, ви можете "навчити" старих браузерів, як обробляти
+          "невідомі елементи".
+        </p>
+        <footer>
+          Прочитайте про це в
+          <a href="https://html5css.ru/html/html5_browsers.php" target="_blank"
+            >підтримці браузера HTML5 .</a
+          >
+        </footer>
+      </article>
+      <section>
+        <h2 id="new">Нові семантичні елементи в HTML5</h2>
+        <p>
+          HTML5 пропонує нові семантичні елементи для визначення різних частин
+          веб-сторінки:
+        </p>
+        <ul>
+          <li><a href="#section">section</a></li>
+          <li><a href="#article">article</a></li>
+          <li><a href="#header">header</a></li>
+          <li><a href="#footer">footer</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2 id="section">HTML5 "section" елемент</h2>
+        <p>Елемент "section" визначає розділ в документі.</p>
+        <p>
+          Згідно з документацією в3к'с HTML5: "розділ представляє собою
+          тематичну угруповання контенту, зазвичай з заголовком".
+        </p>
+        <p>
+          Домашня сторінка зазвичай може бути розділена на розділи для
+          ознайомлення, змісту і контактної інформації.
+        </p>
+        <img src="./img/Example_section.png" alt="img" />
+      </section>
+      <section>
+        <h2 id="article">HTML5 "article" елемент</h2>
+        <p>Елемент "article" визначає незалежний, автономний вміст.</p>
+        <p>
+          Стаття повинна мати сенс самостійно, і вона повинна мати можливість
+          читати його незалежно від іншої частини веб-сайту.
+        </p>
+        <p>Приклади того, де можна використовувати елемент "article":</p>
+        <ul>
+          <li>Повідомлення на форумі</li>
+          <li>блозі</li>
+          <li>Газетна стаття</li>
+        </ul>
+        <img src="./img/Example_article.png" alt="img" />
+      </section>
+      <section>
+        <h2 id="header">HTML5 "header" елемент</h2>
+        <p>Елемент "header" задає заголовок для документа або розділу.</p>
+        <p>
+          Елемент "header" повинен використовуватися в якості контейнера для
+          вступного змісту.
+        </p>
+        <p>В одному документі може бути кілька елементів "header".</p>
+        <p>У наступному прикладі визначається заголовок для статті:</p>
+        <img src="./img/example_header.png" alt="img" />
+      </section>
+      <section>
+        <h2 id="footer">HTML5 "footer" елемент</h2>
+        <p>
+          Елемент "footer" вказує нижній колонтитул для документа або розділу.
+        </p>
+        <p>
+          Нижній колонтитул зазвичай містить автора документа, інформацію про
+          авторське право, посилання на умови використання, контактні дані і
+          т.д.
+        </p>
+        <p>В одному документі може бути кілька елементів "footer".</p>
+        <img src="./img/example_footer.png" alt="img" />
+      </section>
+    </main>
+    <footer>
+      <h2>екстра завдання до домашньої работи запаковане у Footer</h2>
+      <iframe
+        id="resum"
+        src="https://stepanets-vadym.github.io/home-work/lesson_2_html/pages/Index.html"
+        width="900px"
+        height="500px"
+      ></iframe>
+      <br />
+      <iframe
+        id="video"
+        width="932"
+        height="524"
+        src="https://www.youtube.com/embed/FII4DRuiLLI"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </footer>
+  </body>
+</html>
