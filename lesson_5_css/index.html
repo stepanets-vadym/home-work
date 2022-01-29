@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css - layout from home work</title>
+    <!-- в начале файла до первого коментария идет обнуляющий файл для всех браузеров -->
+    <!-- !прошу посмотреть на cвойства обнуляющего файла и подсказать что доработать -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <a href="https://stepanets-vadym.github.io/home-work/">Link to "Main Page"</a>
+    <!-- Шрифты еще не умею подключать - потому Times new Roman -->
+    <div class="wrapper">
+      <div class="content">
+        <!-- Тег для обертки контента -->
+        <header class="header">
+          <!-- Header будет своеобразныйм контейнером -->
+          <nav class="header_navigation">
+            <!-- навигация -->
+            <a class="navigation_link" href="#">Home</a>
+            <a class="navigation_link" href="#About me">About me</a>
+            <a class="navigation_link" href="#Skills">Skills</a>
+            <a class="navigation_link" href="#Portfolio">Portfolio</a>
+            <a class="navigation_link" href="#Contacts">Contacts</a>
+          </nav>
+          <div class="header_titel">
+            <!-- заголовок header -->
+            Denis Novik
+          </div>
+          <div class="header_image">
+            <!-- картинка =) -->
+            <img src="./img/img/first_image.jpg" alt="man with cap" />
+          </div>
+        </header>
+        <div class="about">
+          <!-- About block -->
+          <div class="about__container">
+            <!-- Контейнер -->
+            <div id="About me" class="about__title">About me</div>
+            <!-- Заголовок -->
+            <div class="about__content">
+              <!-- Body блока -->
+              <p class="about__text">
+                Hi, I'm Denis – UX/UI designer from Minsk. <br />
+                I'm interested in design and everything connected with it.
+              </p>
+              <p class="about__text">
+                I'm studying at courses "Web and mobile design <br />
+                interfaces" in IT-Academy.
+              </p>
+              <p class="about__text">
+                Ready to implement excellent projects <br />
+                with wonderful people.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="skils">
+          <!-- Skils block -->
+          <div class="skils__container">
+            <!-- контейнер блока -->
+            <div id="Skills" class="skils__title">Skills</div>
+            <!-- Заголовок -->
+            <div class="skils__subtitel">I work in such programs as</div>
+            <div class="skils__body">
+              <!-- Body блока -->
+              <div class="skils__row">
+                <!-- Отчаянная попыка использовать Flex ахаха -->
+                <div class="skils__column">
+                  <div class="skils__item">
+                    <div class="skils__icon">
+                      <img
+                        src="./img/icon/adobe_photoshop.png"
+                        alt="photoshop icon"
+                      />
+                    </div>
+                    <div class="skils__text">
+                      Adobe <br />
+                      Photoshop
+                    </div>
+                    <div class="skils__stars">
+                      <img src="./img/icon/Star.png" alt="star icon" />
+                      <img src="./img/icon/Star.png" alt="star icon" />
+                      <img src="./img/icon/Star.png" alt="star icon" />
+                      <img src="./img/icon/Star.png" alt="star icon" />
+                      <img
+                        class="opasiti"
+                        src="./img/icon/Star.png"
+                        alt="star icon"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="skils__column">
+                  <div class="skils__item">
+                    <div class="skils__icon">
+                      <img
+                        src="./img/icon/adobe_illustrator.png"
+                        alt="illustrator icon"
+                      />
+                    </div>
+                    <div class="skils__text">
+                      Adobe <br />
+                      Illustrator
+                    </div>
+                    <div class="skils__stars">
+                      <img src="./img/icon/Star.png" alt="star icon" />
+                      <img src="./img/icon/Star.png" alt="star icon" />
+                      <img src="./img/icon/Star.png" alt="star icon" />
+                      <img
+                        class="opasiti"
+                        src="./img/icon/Star.png"
+                        alt="star icon"
+                      />
+                      <img
+                        class="opasiti"
+                        src="./img/icon/Star.png"
+                        alt="star icon"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="skils__column">
+                  <div class="skils__item">
+                    <div class="skils__icon">
+                      <img
+                        src="./img/icon/adobe_after_efect.png"
+                        alt="after_efect icon"
+                      />
+                    </div>
+                    <div class="skils__text">
+                      Adobe <br />
+                      After Effects
+                    </div>
+                    <div class="skils__stars">
+                      <img src="./img/icon/Star.png" alt="star icon" />
+                      <img src="./img/icon/Star.png" alt="star icon" />
+                      <img src="./img/icon/Star.png" alt="star icon" />
+                      <img src="./img/icon/Star.png" alt="star icon" />
+                      <img
+                        class="opasiti"
+                        src="./img/icon/Star.png"
+                        alt="star icon"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="skils__column">
+                  <div class="skils__item">
+                    <div class="skils__icon">
+                      <img
+                        src="./img/icon/Figma_logo90x90.png"
+                        alt="figma icon"
+                      />
+                    </div>
+                    <div class="skils__text">Figma</div>
+                    <div class="skils__stars">
+                      <img src="./img/icon/Star.png" alt="star icon" />
+                      <img src="./img/icon/Star.png" alt="star icon" />
+                      <img src="./img/icon/Star.png" alt="star icon" />
+                      <img src="./img/icon/Star.png" alt="star icon" />
+                      <img
+                        class="opasiti"
+                        src="./img/icon/Star.png"
+                        alt="star icon"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- я отказываюсь коментировать этот блок 
+                                        так как это было капец как сложно ахаха
+                                        P.s. прошу понять и простить
+                                     -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio">
+          <!-- Портфолио блок -->
+          <div id="Portfolio" class="portfolio__title">Portfolio</div>
+          <!-- Заголовок -->
+          <div class="portfolio__content">
+            <!-- Блок контент -->
+            <div class="portfolio__img">
+              <img src="./img/img/fashion.png" alt="#" />
+            </div>
+            <div class="portfolio__text">
+              Online fashion store - <br />
+              Homepage
+            </div>
+            <!-- Решил разбить на блоки -->
+            <div class="portfolio__img">
+              <img src="./img/img/reebok_web.png" alt="#" />
+            </div>
+            <div class="portfolio__text">Reebok Store - Concept</div>
+            <!-- Решил разбить на блоки -->
+            <div class="portfolio__img">
+              <img src="./img/img/braun_web.png" alt="#" />
+            </div>
+            <div class="portfolio__text">Braun Landing Page - Concept</div>
+            <!-- Решил разбить на блоки -->
+          </div>
+        </div>
+        <footer class="footer">
+          <!-- Footer тоже можно было во флексе сделать 
+                        но решил ради тренировки запариться и каждый блок двигал отдельно -->
+          <div class="footer_container">
+            <!-- контейнер Footer -->
+            <div id="Contacts" class="footer__titel">Contacts</div>
+            <!-- Заголовок -->
+            <div class="footer__subtitel">
+              Want to know more or just chat? <br />
+              You are welcome!
+            </div>
+            <!-- Под заголовок -->
+            <div class="footer__message__link">
+              <a class="message" target="_blank" href="#">
+                <span>Send message</span></a
+              >
+            </div>
+            <!-- Думал кнопка но решил ссылку просто забекграундить -->
+            <div class="footer__links__icons">
+              <a class="footer_link" target="_blank" href="#"
+                ><img src="./img/icon/in_icon.png" alt="in icon"
+              /></a>
+              <a class="footer_link" target="_blank" href="#"
+                ><img src="./img/icon/insta_icon.png" alt="insta icon"
+              /></a>
+              <a class="footer_link" target="_blank" href="#"
+                ><img src="./img/icon/be_icon.png" alt="Be icon"
+              /></a>
+              <a class="footer_link" target="_blank" href="#"
+                ><img
+                  src="./img/icon/basketball_icon.png"
+                  alt="basketball icon icon"
+              /></a>
+            </div>
+            <!-- Иконки ссылки -->
+            <div class="footer__text">
+              Like me on <br />
+              LinkedIn, Instagram, Behance, <br />
+              Dribble
+            </div>
+          </div>
+        </footer>
+        <!-- повсюду стоят br так как очень удобно их тыкать :)))
+                P. S. елси это не профессионально сказать об этом  -->
+      </div>
+    </div>
+  </body>
+</html>
