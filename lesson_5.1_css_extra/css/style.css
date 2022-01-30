@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+body {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #F6F6F6;
+  font-size: 18px;
+}
+
+.header__navigation {
+  text-align: center;
+  margin: 40px 0px;
+  padding: 0 0 20px 0;
+  border-bottom: 3px solid #828282;
+}
+
+.header__title {
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0 0 30px;
+}
+
+.navigation_link {
+  padding: 0 30px;
+}
+
+.about img {
+  padding: 0 100px;
+}
+
+.about__container {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.about__titel {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+
+.about__text {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 0 20px 0;
+  letter-spacing: 2px;
+  line-height: 20px;
+}
+
+.skils__container {
+  padding: 30px;
+}
+
+.skils__title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
+
+.skils__body {
+  max-width: 850xp;
+  margin: 0 auto;
+}
+
+.skils__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -5px;
+}
+
+.skils__column {
+  padding: 0 5px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 20.20%;
+          flex: 0 1 20.20%;
+}
+
+.skils__item {
+  text-align: center;
+}
+
+.footer_link {
+  padding: 30px 50px;
+}
+
+.footer__container {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.footer__title {
+  margin: 0 0 30px 0;
+}
+
+.footer__subtitel {
+  margin: 0 0 30px 0;
+}
