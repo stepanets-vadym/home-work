@@ -166,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .checklist__item input[type="checkbox"]:checked + label::before {
-  content: url(.//img/icon/galochka_icon.png);
+  content: url(../img/icon/galochka_icon.png);
   text-align: center;
 }
 
