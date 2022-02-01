@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/* Обнуляющий файл */
+/*--------------------*/
+* {
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
+}
+
+.container {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  width: 100%;
+  margin: 0 auto;
+}
+  /* контейнер для всей страницЫ */
+.header {
+  background-color: #4A4F56;
+  padding: 20px 0;
+  cursor: default;
+}
+
+.header__container {
+  text-align: center;
+}
+
+.header__title {
+  margin: 0 0 5px 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #FF8984;
+}
+
+.header__subtitle {
+  color: #FF8984;
+  font-size: 16px;
+}
+/* хедер */
+.checklist__content {
+  background-color: #3B3F45;
+  padding: 30px 0;
+}
+
+.checklist__content :nth-child(6) {
+  margin-bottom: 30px;
+}
+
+.checklist__form .checklist__button {
+  background-color: #4A4F56;
+  color: #FF8984;
+  font-size: 18px;
+  display: block;
+  margin: 0 auto;
+  width: 545px;
+  height: 45px;
+}
+/* кнопка */
+.checklist__item {
+  border: 2px solid transparent;
+  font-size: 18px;
+  margin: 0 auto;
+  height: 45px;
+  width: 540px;
+}
+
+.checklist__item input[type="checkbox"] {
+  display: none;
+}
+
+.checklist__item:nth-child(even) {
+  background-color: #7A7593;
+}
+
+.checklist__item:nth-child(odd) {
+  background-color: #88839E;
+}
+
+.checklist__item:hover {
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  background-color: #625E77;
+}
+
+.checklist__item:active {
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  background-color: yellow;
+}
+
+.checklist__item label {
+  padding-left: 20px;
+  padding-top: 10px;
+  display: block;
+  height: 100%;
+}
+
+.checklist__item label::before {
+  background-color: white;
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: -10px;
+  margin-right: 10px;
+  height: 20px;
+  width: 20px;
+  content: "";
+}
+
+.checklist__item input[type="checkbox"]:checked + label::before {
+  content: url(/img/icon/galochka_icon.png);
+  text-align: center;
+}
+
+.checklist__item input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+}
+
+.checklist__text {
+  vertical-align: middle;
+  font-size: 11px;
+}
+/* чеклисты  */
+.footer__container {
+  background-color: #FF8984;
+  margin: 0 auto;
+  height: 200px;
+  width: 1000px;
+}
+
+.footer__text {
+  cursor: default;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 50px;
+}
+/* футер */

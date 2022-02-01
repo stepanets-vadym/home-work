@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checklist</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- не подключил нормалайз - так как он не обнулял кнопку -->
+    <!-- использовал свой файл обнуления -->
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="navigation__item">
+        <a href="https://stepanets-vadym.github.io/home-work/">Main Page</a>
+      </div>
+    </nav>
+    <!-- ссылка на главную -->
+    <div class="wrapper">
+      <!-- оберкта на всяк случай -->
+      <div class="container">
+        <!-- контейнер для всего контента  -->
+        <header class="header">
+          <!-- хедер -->
+          <div class="header__container">
+            <div class="header__title">CSS Dinner Shopping List</div>
+            <div class="header__subtitle">Let’s go to the mall!</div>
+          </div>
+        </header>
+
+        <div class="checklist__content">
+          <!-- основной блок с чекбоксом -->
+          <form class="checklist__form">
+            <!-- каждый чекбокс в отдельный блок запакован для стилизации -->
+            <div class="checklist__item">
+              <input type="checkbox" id="checkone" name="list" />
+              <label for="checkone">
+                A lot of pickles
+                <span class="checklist__text">
+                  (for the next lessons about CSS)</span
+                ></label
+              >
+            </div>
+            <div class="checklist__item">
+              <input type="checkbox" id="checktwo" name="list" />
+              <label for="checktwo"
+                >10 apples
+                <span class="checklist__text">
+                  (for more CSS manipulations)</span
+                ></label
+              >
+            </div>
+            <div class="checklist__item">
+              <input type="checkbox" id="checkthree" name="list" />
+              <label for="checkthree"
+                >20 oranges
+                <span class="checklist__text">
+                  (because they are awesome)</span
+                ></label
+              >
+            </div>
+            <div class="checklist__item">
+              <input type="checkbox" id="checkfour" name="list" />
+              <label for="checkfour"
+                >13 plates
+                <span class="checklist__text">
+                  (hm... they always dissapear)</span
+                ></label
+              >
+            </div>
+            <div class="checklist__item">
+              <input type="checkbox" id="checkfive" name="list" />
+              <label for="checkfive">15 bentos</label>
+            </div>
+            <div class="checklist__item">
+              <input type="checkbox" id="checksix" name="list" />
+              <label for="checksix"
+                >1 bottle of Sake
+                <span class="checklist__text"> (for my friends)</span></label
+              >
+            </div>
+            <!-- кнопка -->
+            <button class="checklist__button" type="submit">Bon appetit</button>
+          </form>
+        </div>
+        <footer class="footer">
+          <!-- футер с именем ученика ))  -->
+          <div class="footer__container">
+            <div class="footer__text">Работу сделал Степанец Вадим</div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
