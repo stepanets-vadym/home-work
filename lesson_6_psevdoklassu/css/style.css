@@ -114,6 +114,10 @@ h1, h2, h3, h4, h5, h6 {
   width: 545px;
   height: 45px;
 }
+.checklist__form .checklist__button::after{
+  content: "^_^";
+  padding-left:10px;
+}
 /* кнопка */
 .checklist__item {
   border: 2px solid transparent;
