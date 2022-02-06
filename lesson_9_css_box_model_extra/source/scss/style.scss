@@ -1,0 +1,123 @@
+
+
+.navigation {
+
+    &__item {
+        padding: 40px;
+        text-align: center;
+        background-color: #669999;
+        font-size: 20px;
+        font-weight: 700;
+        &:hover{
+            background-color: yellow;
+        }
+        &:active{
+            background-color: red;
+        }
+    }
+}
+.content {
+
+    &__container {
+        max-width: 830px;
+        height: 550px;
+        margin: 0 auto;
+        border: 15px solid #2B81AC;
+        background-color: #3399CC; 
+        
+    }
+}
+.weather {
+    
+    &__table {
+        margin: 96px 130px;
+        background-color: white;
+        
+    }  
+    
+    
+    &__items {
+        font-size: 0px;
+        border: 1.5px solid white;
+        border-collapse: collapse;
+        &:hover > li{ 
+            opacity: 0.4;
+        }
+
+        &:hover > li:hover{
+            opacity: 1;
+        }
+        
+        
+       
+        li{
+            display: inline-block;
+            color: white;
+            border: 1.5px solid white;
+            font-size: 16px;
+            height: 82px;
+            text-align: center;
+            padding: 30px;
+            
+    
+            
+        }
+        
+        
+        :nth-child(1){
+            background-color: #3399CC;
+            width: 50%;
+        }
+        :nth-child(2){
+            width: 25%;
+            background-color:#33CCCC;
+        }
+        :nth-child(3){
+            width: 25%;
+            background-color: #996699;
+        }
+        :nth-child(4){
+            background-color: #C24747;
+            width: 25%;
+        }
+        :nth-child(5){
+            background-color: #E2674A;
+            width: 25%;
+        }
+        :nth-child(6){
+            background-color: #FFCC66;
+            width: 25%;
+        }
+        :nth-child(7){
+            background-color: #99CC99;
+            width: 25%;
+        }
+        :nth-child(8){
+            background-color: #669999;
+            width: 25%;
+        }
+        :nth-child(9){
+            background-color: #CC6699;
+            width: 50%;
+        }
+        :nth-child(10){
+            background-color: #339966;
+            width: 25%;
+        }
+        :nth-child(11){
+            background-color: #666699;
+            width: 100%;
+        }
+    }
+    
+    
+}
+.footer {
+
+    &__text {
+        padding: 30px;
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+    }
+}
