@@ -1,0 +1,256 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.navigation__link {
+  display: block;
+  padding: 30px;
+  text-align: center;
+  font-size: 44px;
+  font-weight: 700;
+  color: #173a56;
+  background-color: #ff9900;
+}
+
+.content {
+  background-color: #f2f2f2;
+  padding: 20px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1210px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form {
+  max-width: 540px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+}
+
+.form__block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.form__item {
+  max-width: 245px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form__item__title {
+  font-size: 15px;
+  color: #545454;
+  line-height: 22px;
+  margin-bottom: 8px;
+}
+
+.form__input {
+  border-radius: 6px;
+  width: 100%;
+  padding: 10px 30px 10px 5px;
+  border: 1px solid #e4e4e4;
+}
+
+.form__input:focus {
+  border: 1px solid #007bff;
+}
+
+.form__text {
+  line-height: 18px;
+  font-size: 13px;
+  color: #969696;
+}
+
+.form__item-wrapper {
+  position: relative;
+}
+
+.form__item-wrapper::before {
+  content: url(../img/svg/icon_color.svg);
+  position: absolute;
+  top: 11px;
+  right: 10px;
+  display: block;
+  width: 11px;
+  height: 15px;
+  pointer-events: none;
+}
+
+.registration-form__title {
+  font-size: 24px;
+  font-weight: 900;
+  color: #1c1c1c;
+  margin-bottom: 20px;
+}
+
+.registration-form__gender {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.registration-form__element {
+  position: relative;
+  padding-left: 25px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.registration-form__radio {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  opacity: 0;
+}
+
+.registration-form__radio:checked ~ .registration-form__element-custom::before {
+  content: url(../img/svg/On.svg);
+  top: 0;
+  left: 0;
+}
+
+.registration-form__element-custom::before {
+  content: url(../img/svg/Background.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.registration-form__submit {
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
+  width: 500px;
+  padding: 8px 10px;
+  text-align: center;
+  font-size: 15px;
+  color: #1c1c1c;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.registration-form__footer {
+  text-align: center;
+}
+
+.registration-form__footer .registration-form__text {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.registration-form__footer > :last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 15px;
+  color: #545454;
+}
+
+.color-blue {
+  color: #007bff;
+}
+
+.e-mail {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.camera {
+  position: relative;
+  width: 140px;
+  height: 30px;
+  border: 1px solid #e4e4e4;
+  padding: 10px 30px 10px 5px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.camera::before {
+  content: url(../img/svg/photo_camera.svg);
+  position: absolute;
+  top: 6px;
+  right: 5px;
+}
+
+.profile-form__title {
+  font-size: 24px;
+  line-height: 32px;
+  color: #1c1c1c;
+  font-weight: 700;
+}
+
+.profile-form__foto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  cursor: default;
+}
+
+.profile-form__element {
+  padding-right: 20px;
+}
+
+.profile-form__image {
+  width: 100%;
+}
+
+.profile-form__file {
+  display: none;
+}
+
+.profile-form__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profile-form__button {
+  position: absolute;
+  top: 6px;
+  right: 210px;
+  background: none;
+  height: 30px;
+  width: 30px;
+}
+
+.footer {
+  background-color: #ff9900;
+}
+
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__text {
+  font-size: 20px;
+}

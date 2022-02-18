@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform</title>
+    <!-- ?fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ?фавиконка  -->
+    <link
+      rel="shortcut icon"
+      href="./img/favico/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="./css/normalaize.css" />
+    <!-- ?Normalaize -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- ?Style -->
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__navigation">
+        <a
+          class="navigation__link"
+          href="https://stepanets-vadym.github.io/home-work/"
+          >Link to "Main Page"</a
+        >
+        <!-- ссылка на главную -->
+      </nav>
+    </header>
+    <!-- * Блок контент -->
+    <div class="content">
+      <form action="#" method="post" class="registration-form form">
+        <!-- *Заголовок -->
+        <div class="registration-form__title">Create an Account</div>
+        <!-- Блок Имя - Фамилия -->
+        <div class="registration-form__block form__block">
+          <!-- Поле Имя -->
+          <label class="registration-form__item form__item">
+            <div class="registration-form__item__title form__item__title">
+              First Name
+            </div>
+            <input
+              class="registration-form__input form__input"
+              type="text"
+              name="firstname"
+            />
+          </label>
+          <!-- Поле Фамилия -->
+          <label class="registration-form__item form__item">
+            <div class="registration-form__item__title form__item__title">
+              Last Name
+            </div>
+            <input
+              class="registration-form__input form__input"
+              type="text"
+              name="lastname"
+            />
+          </label>
+        </div>
+
+        <!-- Блок почты -->
+        <div class="registration-form__e-mail-block e-mail">
+          <label class="registration-form__item">
+            <div class="registration-form__item__title form__item__title">
+              E-mail
+            </div>
+            <input
+              class="registration-form__input form__input"
+              type="email"
+              name="lastname"
+            />
+            <!-- строка предупреждения -->
+            <div class="registration-form__text form__text">
+              We'll never share your email with anyone else.
+            </div>
+          </label>
+        </div>
+        <!-- Блок выбор пола -->
+        <div class="registration-form__gender">
+          <!-- Мужской пол -->
+          <label class="registration-form__element">
+            <input
+              class="registration-form__radio"
+              type="radio"
+              checked
+              name="gender"
+              value="male"
+            />
+            <span class="registration-form__element-custom"></span>
+            <div class="registration-form__item__title form__item__title">
+              Male
+            </div>
+          </label>
+          <!-- Женский пол -->
+          <label class="registration-form__element">
+            <input
+              class="registration-form__radio"
+              type="radio"
+              name="gender"
+              value="female"
+            />
+            <span class="registration-form__element-custom"></span>
+            <div class="registration-form__item__title form__item__title">
+              Female
+            </div>
+          </label>
+        </div>
+
+        <!-- Блок выбора национальности -->
+        <div class="registration-form__block form__block">
+          <div class="registration-form__item form__item">
+            <h2 class="registration-form__item__title form__item__title">
+              Country
+            </h2>
+            <div class="registration-form__item-wrapper form__item-wrapper">
+              <!-- Поле выбора национальности -->
+              <select
+                class="registration-form__input form__input"
+                name="country"
+              >
+                <option disabled selected value="Select">Select</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="my_Ukraine">my_Ukraine</option>
+                <option value="one-love_Ukraine">one-love_Ukraine</option>
+              </select>
+            </div>
+          </div>
+          <div class="registration-form__item form__item">
+            <h2 class="registration-form__item__title form__item__title">
+              City
+            </h2>
+            <div class="registration-form__item-wrapper form__item-wrapper">
+              <!-- Поле выбора города -->
+              <select class="registration-form__input form__input" name="city">
+                <option selected disabled value="none"></option>
+                <option value="Poltava">Poltava</option>
+                <option value="Kharkiv">Kharkiv</option>
+                <option value="Dnipro">Dnipro</option>
+                <option value="Lviv">Lviv</option>
+                <option value="Kuiv">Kuiv</option>
+                <option value="Odessa">Odessa</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Кнопка отправки -->
+        <button class="registration-form__submit" type="submit">
+          <span>Sign Up</span>
+        </button>
+        <!-- строка уточнения -->
+        <div class="registration-form__footer">
+          <p class="registration-form__text form__text">
+            By clicking the 'Sign Up' button, you confirm that you accept our
+            <br />
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=vejUsXxayPA"
+              class="color-blue"
+              >Terms of Use</a
+            >
+            and
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=vejUsXxayPA"
+              class="color-blue"
+              >Privacy Policy</a
+            >
+          </p>
+
+          <!-- строка входа -->
+          <div class="registration-form__text form__text">
+            Have an account?<a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=vejUsXxayPA"
+              class="color-blue"
+              ><b>Log In</b></a
+            >
+          </div>
+        </div>
+      </form>
+      <form action="#" method="post" class="profile-form form">
+        <!-- *Заголовок -->
+        <div class="profile-form__title">Profile</div>
+        <div class="profile-form__foto">
+          <div class="profile-form__element">
+            <img
+              class="profile-form__image"
+              src="./img/img/Image.png"
+              alt="profile-form__foto"
+            />
+          </div>
+          <div class="profile-form__input">
+            <label class="profile-form__item form__item camera">
+              <input
+                class="profile-form__file"
+                type="file"
+                name="download"
+                accept="image/*"
+              />
+              <div class="profile-form__file-custom"></div>
+            </label>
+            <div class="profile-form__text form__text">
+              Up to 1 MB &#40;300x300 px&#41;
+            </div>
+          </div>
+          <button class="profile-form__button" type="button">
+            <svg
+              viewbox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.5 6C0.5 2.96243 2.96243 0.5 6 0.5H24C27.0376 0.5 29.5 2.96243 29.5 6V24C29.5 27.0376 27.0376 29.5 24 29.5H6C2.96243 29.5 0.5 27.0376 0.5 24V6Z"
+                fill="white"
+                stroke="#E4E4E4"
+              />
+              <mask
+                id="mask0_0_151"
+                style="mask-type: alpha"
+                maskunits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="30"
+                height="30"
+              >
+                <path
+                  d="M0.5 6C0.5 2.96243 2.96243 0.5 6 0.5H24C27.0376 0.5 29.5 2.96243 29.5 6V24C29.5 27.0376 27.0376 29.5 24 29.5H6C2.96243 29.5 0.5 27.0376 0.5 24V6Z"
+                  fill="white"
+                  stroke="white"
+                />
+              </mask>
+              <g mask="url(#mask0_0_151)"></g>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M11.0002 19.6667C11.0002 20.4 11.6002 21 12.3335 21H17.6668C18.4002 21 19.0002 20.4 19.0002 19.6667V11.6667H11.0002V19.6667ZM19.6668 9.66667H17.3335L16.6668 9H13.3335L12.6668 9.66667H10.3335V11H19.6668V9.66667Z"
+                fill="#969696"
+              />
+            </svg>
+          </button>
+        </div>
+        <!-- Блок Имя - Электонный адрес -->
+        <div class="profile-form__block form__block">
+          <!-- Поле Имя -->
+          <label class="profile-form__item form__item">
+            <div class="profile-form__item__title form__item__title">Name</div>
+            <input
+              class="profile-form__input form__input"
+              type="text"
+              name="firstname"
+            />
+          </label>
+          <!-- Электонный адрес -->
+          <label class="profile-form__item form__item">
+            <div class="profile-form__item__title form__item__title">
+              E-mail
+            </div>
+            <input
+              class="profile-form__input form__input"
+              type="email"
+              name="lastname"
+            />
+          </label>
+        </div>
+        <!-- *Блок выбора национальности -->
+        <div class="profile-form__block form__block">
+          <div class="profile-form__item form__item">
+            <h2 class="profile-form__item__title form__item__title">Country</h2>
+            <div class="profile-form__item-wrapper form__item-wrapper">
+              <!-- Поле выбора национальности -->
+              <select class="profile-form__input form__input" name="country">
+                <option value="Select">Select</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="my_Ukraine">my_Ukraine</option>
+                <option value="one-love_Ukraine">one-love_Ukraine</option>
+              </select>
+            </div>
+          </div>
+          <div class="profile-form__input">
+            <h2 class="profile-form__item__title form__item__title">City</h2>
+            <div class="profile-form__item-wrapper form__item-wrapper">
+              <!-- Поле выбора города -->
+              <select class="registration-form__input form__input" name="city">
+                <option selected disabled value="none"></option>
+                <option value="Poltava">Poltava</option>
+                <option value="Kharkiv">Kharkiv</option>
+                <option value="Dnipro">Dnipro</option>
+                <option value="Lviv">Lviv</option>
+                <option value="Kuiv">Kuiv</option>
+                <option value="Odessa">Odessa</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- *Блок пароль и номер -->
+        <div class="profile-form__block form__block">
+          <!-- Поле Зип -->
+          <label class="profile-form__item form__item">
+            <div class="profile-form__item__title form__item__title">
+              Zip Code
+            </div>
+            <input
+              class="profile-form__input form__input"
+              type="password"
+              name="firstname"
+            />
+          </label>
+          <!-- Номер -->
+          <label class="profile-form__item form__item">
+            <div class="profile-form__item__title form__item__title">
+              Phone Number
+            </div>
+            <input
+              class="profile-form__input form__input"
+              type="number"
+              name="lastname"
+            />
+          </label>
+        </div>
+      </form>
+    </div>
+    <!-- *Футер -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__row">
+          <div class="footer__text">Student: Stepanets Vadym</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
