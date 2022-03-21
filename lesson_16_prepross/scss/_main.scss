@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+// * Icon
+.icon {
+  display: inline-block;
+  stroke: currentColor;
+  fill: currentColor;
+  height: 1em;
+  width: 1em;
+
+  &:not(.has-stroke) {
+    stroke-width: 0;
+  }
+}
+
+body {
+  background-color: $c-white;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 10px;
+}
+a[href^="#"] {
+  color: red;
+}
+
+.content {
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  display: flex;
+  margin: 20px;
+  &__arrow {
+    position: absolute;
+    top: 200px;
+    right: 0;
+    cursor: pointer;
+    &__left {
+      left: 0;
+      width: fit-content;
+    }
+  }
+  // &__arrow__left{
+  //   left: 0;
+  // }
+}
+.line-block {
+  justify-content: center;
+  pointer-events: none;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  &__line {
+    background-color: $c-yelow;
+    height: 100%;
+    width: 1px;
+  }
+}

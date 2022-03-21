@@ -1,0 +1,20 @@
+mixin about()
+  .about 
+    .about__wrapper 
+      h2.about__name Sahariar Kabir
+      .about__name-border
+      .about__subtitel Frontend Developer
+      .about__links
+        ul.about__list
+          +listItem("#"," ","#icon-bar-chart-svgrepo-com")
+          +listItem("#"," ","#icon-bell-svgrepo-com")
+          +listItem("#"," ","#icon-collapse-svgrepo-com")
+          +listItem("#"," ","#icon-dollar-svgrepo-com")
+      .about__text.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus dui sit amet ligula efficitur, sit amet lacinia massa dictum. Etiam accumsan felis a nunc facilisis, ut euismod lacus placerat. Praesent rutrum eget massa a convallis. Nam vitae augue malesuada, accumsan mauris ut, consectetur.
+      .about__lines 
+        span.lines__one
+        span.lines__two
+        span.lines__one
+      .about__btn      
+        +button({title:"VIEW PROFILE", type:"button", })(class="about-btn")

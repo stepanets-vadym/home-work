@@ -1,0 +1,12 @@
+.footer {
+  background-color: $c-orange;
+  &__row {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 50px;
+  }
+  &__text {
+    font-size: 20px;
+  }
+}

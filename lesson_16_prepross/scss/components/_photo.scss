@@ -1,0 +1,51 @@
+.photo {
+
+		&__wrapper {
+      position: relative;
+      padding: 50px 0;
+		}
+
+		&__item {
+      background-color: $c-white;
+      margin: 15px;
+		}
+
+		&__border {
+			&__right-top{
+				border-right: 1px solid $c-yelow;
+				border-top: 1px solid $c-yelow;
+				position: absolute;
+				height: 100px;
+				width: 100px;
+				top: 50px;
+				right: 0;
+			}
+			&__left-top{
+				border-left: 1px solid $c-yelow;
+				border-top: 1px solid $c-yelow;
+				position: absolute;
+				height: 100px;
+				width: 100px;
+				top: 50px;
+				left: 0;
+			}
+			&__right-bottom{
+				border-bottom: 1px solid $c-yelow;
+				border-right: 1px solid $c-yelow;
+				position: absolute;
+				height: 100px;
+				width: 100px;
+				bottom: 50px;
+				right: 0;
+			}
+			&__left-bottom{
+				border-bottom: 1px solid $c-yelow;
+				border-left: 1px solid $c-yelow;
+				position: absolute;
+				height: 100px;
+				width: 100px;
+				bottom: 50px;
+				left: 0;
+			}
+		}
+}

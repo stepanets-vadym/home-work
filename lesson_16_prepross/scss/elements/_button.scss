@@ -1,0 +1,16 @@
+.about {
+  &__btn {
+  }
+}
+.e-button {
+}
+.about-btn {
+  background-color: $c-white;
+  border: 1px solid $c-yelow;
+  font-family: $f-opensans;
+  line-height: 24px;
+  color: #666666;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 0 10px;
+}
