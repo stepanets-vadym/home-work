@@ -1,0 +1,34 @@
+// COLORS
+$c-black: #000;
+$c-blue: #70bfff;
+$c-dark-blue: #5585a2;
+$c-orange: #ff6033;
+$c-white: #ffffff;
+$c-footer: #b9b9b9;
+$c-white-dark: #f8efef;
+$c-gray-text: #262626;
+$c-turquoise: #00c4c4;
+$c-yellow: #ffe92f;
+$c-green: #96b92c;
+$c-red: #f72b3b;
+$c-violet: #b07cf7;
+
+// Font
+$f-raleway: "Raleway", sans-serif;
+$f-pasifico: "Pacifico", cursive;
+
+// Font size
+$fs-base: 16;
+$fs-title: 90;
+
+// Transition
+$t-normal: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+
+// Box Shadow
+$bs-normal: 3px 4px 7px rgba($c-black, 0.1);
+
+// Width
+$widthPx:1190;
+
+// Max-Width
+$mw-base:1170px;

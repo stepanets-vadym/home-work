@@ -1,0 +1,10 @@
+mixin subscribe()
+  .subscribe
+    .subscribe__wrapper 
+      .subscribe__content
+        h2.subscribe__title Subscribe To Us
+        .subscribe__text Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        form.subscribe__form(action="#" method="post") 
+          input.form__input(type="email" name="email" placeholder="Your email address...")
+      .subscribe__btn
+        +button({title:"SUBSCRIBE", type:"button", })(class="e-button--orange subscribe__btn--btn")

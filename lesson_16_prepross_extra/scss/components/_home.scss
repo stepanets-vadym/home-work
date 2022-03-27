@@ -1,0 +1,40 @@
+.home {
+  background-image: url(../../aseets/img/Strawberry.png);
+  @include backgroundCoverCenter;
+  position: relative;
+  
+  &__wrapper {
+    justify-content: center;
+    flex-direction: column;
+    @include maxCentered($widthPx);
+    padding: 0 10px;
+    display: flex;
+    height: 100vh;
+  }
+
+  &__title {
+    margin-bottom: 35px;
+    font-weight: 900;
+    font-size: 60px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    line-height: 27px;
+    font-weight: 300;
+    font-size: $fs-base;
+  }
+
+  &__link {
+    // @include absolutelyCenterHB;
+    justify-content: center;
+    align-items: center;
+    color: $c-gray-text;
+    position: absolute;
+    font-size: 40px;
+    display: block;
+    display: flex;
+    bottom: 80px;
+    left: calc(50% - 25px);
+  }
+}

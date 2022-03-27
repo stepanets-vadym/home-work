@@ -1,0 +1,41 @@
+.footer {
+  background-color: $c-gray-text;
+
+  &__wrapper {
+    @include maxCentered($widthPx);
+    padding: 40px 10px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+  }
+
+  &__license {
+    line-height: 26px;
+    font-weight: 300;
+    color: $c-footer;
+  }
+
+  &__logo {
+    font-family: $f-pasifico;
+    font-weight: 400;
+    color: #b9b9b9;
+    font-size: 26px;
+  }
+
+  &__message {
+    line-height: 25px;
+    font-weight: 300;
+    color: #b9b9b9;
+  }
+
+  &__link {
+    font-weight: 700;
+    color: $c-red;
+    padding: 4px 0;
+    transition: $t-normal;
+    &:hover{
+      color: $c-green;
+    }
+  }
+}
+

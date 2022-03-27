@@ -1,0 +1,16 @@
+mixin gallery()
+  .gallery#gallery
+    .gallery__wrapper 
+      h2.gallery__title Gallery
+      .gallery__text-block Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      .gallery__image-block--one
+        .gallery__image-block--left
+          +imageBlock({src:"./aseets/img/gallery_peach.png",alt:"peach"})
+        .gallery__image-block--right
+          +imageBlock({src:"./aseets/img/gallery__blueberry.png",alt:"blueberry"})
+          +imageBlock({src:"./aseets/img/gallery_blackberry.png",alt:"blackberry"})
+      .gallery__image-block--two
+        +imageBlock({src:"./aseets/img/gallery__blueberry_milk.png",alt:"blueberry_milk"})
+        +imageBlock({src:"./aseets/img/gallery_persimmon.png",alt:"persimmon"})
+      .gallery__btn      
+        +button({title:"VIEW MORE", type:"button", })(class="e-button--dark-blue")

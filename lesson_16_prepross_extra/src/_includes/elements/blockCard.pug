@@ -1,0 +1,14 @@
+mixin blockCard(classes, date, month, cardTitle, cardInfo)
+  //- -var cardDate = args.text || "text not loaded"
+  //- -var cardTitle = args.title || "text not loaded"
+  //- -var cardInfo = args.text || "text not loaded"
+
+  .card__wrapper(class= classes)
+    .card__date
+      .date__day= date
+      .date__month= month
+    .card__content
+      h3.card__title= cardTitle
+      .card__info= cardInfo
+
+

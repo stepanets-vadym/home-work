@@ -1,0 +1,10 @@
+mixin blog()
+  .blog#blog
+    .blog__wrapper 
+      .blog__title Blog
+      .blog__text Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
+      .blog__card
+        +blockCard("card__one","24", "NOV","Green Smoothies: Too Much of a Good Thing?","By Auskteez - 2 hours ago")
+        +blockCard("card__two","14", "NOV","Growing Food and a “Thirst” for Innovation","By Auskteez - 3 hours ago")
+        +blockCard("card__three","10", "NOV ","Pesticides & Food: What You Need to Know","By Auskteez - 6 hours ago")
+      +button({title:"VIEW MORE", type:"button", })(class="e-button--red")

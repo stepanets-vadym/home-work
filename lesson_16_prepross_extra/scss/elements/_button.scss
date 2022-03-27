@@ -1,0 +1,20 @@
+.e-button {
+  font-weight: 300;
+  font-size: 20px;
+  height: 56px;
+  padding: 0 25px;
+  color: $c-white;
+  transition: $t-normal;
+  &:hover{
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.5);
+  }
+  &--orange{
+    background-color: $c-orange;
+  }
+  &--dark-blue{
+    background-color: $c-dark-blue;
+  }
+  &--red{
+    background-color: $c-red;
+  }
+}

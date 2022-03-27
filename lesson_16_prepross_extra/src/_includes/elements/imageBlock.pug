@@ -1,0 +1,7 @@
+mixin imageBlock(args={})
+  -var imageSrc = args.src || "#"
+  -var imageAlt = args.alt || "your browser is unable to load the image"
+  
+  
+  .image-block__item 
+    img(src=imageSrc, alt=imageAlt)

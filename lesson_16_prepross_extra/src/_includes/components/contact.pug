@@ -1,0 +1,21 @@
+mixin contact()
+  .contact#contact
+    .contact__wrapper 
+      .contact__title Contact
+      .contact__text For new projects, ideas, business or anything you'd like to discuss, contact with me!
+      .contact__content
+        form.contact__form
+          +input(type="text", name="username", placeholder="Auskteez Tran", class="contact__input")
+          +input(type="email", name="useremail", placeholder="Your email...", class="contact__input")
+          +input(type="tel", name="username", placeholder="Your phone number...", class="contact__input")
+          textarea.contact__message(name="message" placeholder="Your messge...", class="contact__input")
+        .contact__info
+          .info__address
+            .address__title.info__title ADDRESS
+            .address__text.info__text 123 City name, Street, City, Country
+          .info__email 
+            .email__title.info__title EMAIL
+            .email__text.info__text cahee@domain.com
+          .info__phone 
+            .phone__title.info__title PHONE
+            .phone__number.info__text +012 345 6789

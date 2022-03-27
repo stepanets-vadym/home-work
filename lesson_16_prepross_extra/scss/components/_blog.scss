@@ -1,0 +1,113 @@
+.blog {
+  background-color: $c-violet;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  &__wrapper {
+    @include maxCentered($widthPx);
+    padding: 40px 10px;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: $fs-title + px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: $c-white;
+  }
+
+  &__text {
+    @include maxCentered(560);
+    margin-bottom: 30px;
+    line-height: 25px;
+    font-weight: 300;
+    color: $c-white;
+  }
+
+  &__card {
+    grid-template-columns: 2fr 2fr 2fr;
+    margin-bottom: 50px;
+    grid-gap: 30px;
+    display: grid;
+  }
+}
+.card {
+  &__wrapper {
+    box-shadow: inset 0px -80px 20px rgba($c-black, 0.7),
+      0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    justify-content: flex-end;
+    flex-direction: column;
+    transition: $t-normal;
+    position: relative;
+    color: $c-white;
+    display: flex;
+    padding: 20px;
+    &:hover {
+      box-shadow: inset 0px -80px 20px rgba($c-black, 0.7),
+        0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &__date {
+    background-color: rgba(38, 38, 38, 0.5);
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 5px;
+    position: absolute;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    left: 30px;
+    top: 30px;
+  }
+
+  &__content {
+    text-align: start;
+  }
+
+  &__title {
+    line-height: 26px;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 26px;
+  }
+
+  &__info {
+    font-weight: 300;
+    font-size: 13px;
+  }
+
+  &__one {
+    background: url("./aseets/img/blog_koktail.png") 0 0/100% 100% no-repeat;
+    height: 310px;
+    width: 370px;
+  }
+
+  &__two {
+    background: url("./aseets/img/blog_soup.png") 0 0/100% 100% no-repeat;
+    height: 310px;
+    width: 370px;
+  }
+
+  &__three {
+    background-image: url("./aseets/img/blog__raspberry.png");
+    height: 310px;
+    width: 370px;
+  }
+}
+
+.date {
+  &__day {
+    margin-bottom: 5px;
+    line-height: 26px;
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  &__month {
+    line-height: 26px;
+    font-weight: 900;
+    font-size: 22px;
+  }
+}

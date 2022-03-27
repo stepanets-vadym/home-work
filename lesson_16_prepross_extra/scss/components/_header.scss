@@ -1,0 +1,50 @@
+.header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  @include maxCentered($widthPx);
+  padding: 30px 10px;
+  z-index: 9;
+  &__wrapper {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    
+  }
+
+  &__logo {
+    font-family: $f-pasifico;
+    font-weight: 400;
+    font-size: 50px;
+  }
+
+  &__menu {
+    display: flex;
+    
+  }
+
+  &__link {
+    border: 3px solid transparent;
+    color: $c-gray-text;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px 0;
+    transition: $t-normal;
+    &:hover {
+      border-top: 3px solid $c-orange;
+    }
+    
+  }
+}
+.list-item {
+  list-style-type: none;
+  margin-right: 30px;
+  &:last-child {
+    margin: 0;
+  }
+  // & >.header__link:hover{
+  //   border-top: 1px solid red;
+  // }
+}

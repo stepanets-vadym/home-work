@@ -1,0 +1,22 @@
+extends ./src/_extends/common
+
+block favico
+  link(rel="shortcut icon", href="./aseets/favico/favicon.ico", type="image/x-icon")
+
+block title
+  title prepros
+
+block style
+  link(rel="stylesheet", href="https://necolas.github.io/normalize.css/8.0.1/normalize.css")
+  //- link(rel="stylesheet", href="./node_modules/normalize-scss/sass/normalize.scss")
+
+block content
+  +header()
+  +home()
+  +about()
+  +services()
+  +gallery()
+  +subscribe()
+  +blog()
+  +contact()
+  +footer()

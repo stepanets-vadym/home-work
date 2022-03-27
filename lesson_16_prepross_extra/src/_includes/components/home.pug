@@ -1,0 +1,13 @@
+mixin home()
+  .home#home 
+    .home__wrapper 
+      .home__title Fresh Life
+      .home__text 
+        | Sed do eiusmod tempor incididunt ut labore et <br>
+        | dolore magna aliqua. Ut enim ad minim veniam, <br>
+        | quis nostrud exercitation ullamco.
+      .home__btn      
+        +button({title:"GET FREE NOW", type:"button", })(class="e-button--orange")
+      .home__link-block 
+        a.home__link.e-link(href="#about")
+          +icon( { name:"#icon-computer-mouse-svgrepo-com", classes:"home__icon"} )

@@ -1,0 +1,45 @@
+.subscribe {
+  background: url(../../aseets/img/blueberry.png)0 0/100% 100% no-repeat;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  &__wrapper {
+    @include maxCentered($widthPx);
+    padding: 40px 10px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 30px;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 20px; 
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  &__text {
+    line-height: 27px;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+
+  &__form{
+    :last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  &__btn{
+    position: relative;
+    &--btn{
+      position: absolute;
+      top: 38px;
+      left: 0;
+    }
+  }
+
+}
+
+

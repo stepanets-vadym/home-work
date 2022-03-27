@@ -1,0 +1,75 @@
+.contact {
+  background: url("./aseets/img/landscape.png") 0 0/100% 100% no-repeat;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  &__wrapper {
+    @include maxCentered($widthPx);
+    padding: 40px 10px;
+  }
+
+  &__content {
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 170px;
+    display: grid;
+  }
+
+  &__title {
+    font-size: $fs-title + px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  &__text {
+    @include maxCentered(340);
+    margin-bottom: 40px;
+    text-align: center;
+    line-height: 26px;
+    font-weight: 400;
+  }
+
+  &__form {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__input {
+    background-color: $c-turquoise;
+    border: 5px solid transparent;
+    border-radius: 6px;
+    opacity: 0.5;
+    &::placeholder {
+      color: $c-white;
+    }
+    &:focus {
+      border-left: 5px solid $c-dark-blue;
+      opacity: 1;
+    }
+  }
+
+  &__message {
+    padding: 10px;
+    height: 250px;
+    width: 500px;
+  }
+
+  &__info {
+    & > div {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.info {
+  &__text {
+    font-weight: 300;
+    font-size: 20px;
+  }
+  &__title {
+    line-height: 25px;
+    font-weight: 700;
+  }
+}
