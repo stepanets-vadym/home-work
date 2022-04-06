@@ -638,6 +638,7 @@ input {
   }
   .navigation__list > li:last-child {
     margin-bottom: 0;
+    margin-right: auto;
   }
   .navigation__link {
     font-size: 30px;
