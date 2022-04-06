@@ -1,0 +1,17 @@
+mixin header()
+  header.header
+    .container.header__wrapper
+      +logo( {text:"MANIFEST"} )
+      .header__block
+        .header__burger
+          span
+        .header__navigation
+          +navigation()
+            +listItem("#home","HOME", classes="navigation__link")
+            +listItem("#about","ABOUT", classes="navigation__link")
+            +listItem("#works","WORKS", classes="navigation__link")
+            +listItem("#blog","BLOG", classes="navigation__link")
+            +listItem("#contact","CONTACT", classes="navigation__link")
+        .header__icon-block
+          a.header__search-icon(href="#") 
+            +icon( { name:"#icon-Icon-color", classes:"header__icon"} )      

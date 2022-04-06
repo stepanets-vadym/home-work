@@ -1,0 +1,19 @@
+.swiper {
+  margin-bottom: 134px;
+  height: fit-content;
+  &__image-block{
+  margin-bottom: 22px;
+
+  }
+}
+.swiper-slide {
+  height: fit-content;
+  max-width: 544px;
+  min-width: 0;
+  width: 100%;
+}
+
+
+.slide-text {
+  letter-spacing: 1px;
+}

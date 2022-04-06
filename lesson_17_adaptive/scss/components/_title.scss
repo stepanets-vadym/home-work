@@ -1,0 +1,17 @@
+.title {
+  margin-bottom: 135px;
+  margin-top: 248px;
+  &__text {
+    letter-spacing: $ls-base + px;
+    font-family: $f-Red-hot;
+    flex-direction: column;
+    font-size: $fs-h1 + px;
+    word-spacing: 3px;
+    max-width: 692px;
+    width: 100%;
+    display: flex;
+    & :first-child {
+      margin-bottom: 16px;
+    }
+  }
+}

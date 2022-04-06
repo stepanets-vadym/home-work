@@ -1,0 +1,34 @@
+.navigation {
+  &__list {
+    display: flex;
+    margin: 0 42px;
+  }
+
+  &__link {
+    border: 2px solid transparent;
+    letter-spacing: 4px;
+    position: relative;
+    line-height: 16px;
+    color: $c-black;
+    font-size: 12px;
+    padding: 5px;
+
+    &:hover {
+      color: $c-black;
+      &::before {
+        border-top: 2px solid $c-gray;
+        left: calc(50% - 18px);
+        position: absolute;
+        bottom: -4px;
+        content: "";
+        width: 36px;
+      }
+    }
+  }
+}
+.list-item {
+  margin-right: 38px;
+  &:last-child {
+    margin-right: 0;
+  }
+}

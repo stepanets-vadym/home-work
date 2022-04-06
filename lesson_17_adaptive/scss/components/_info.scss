@@ -1,0 +1,43 @@
+.info {
+  &_wrapper {
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 134px;
+  }
+
+  &__link {
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    display: flex;
+    padding: 5px;
+  }
+
+  &__icon {
+    font-size: $fs-h2 + px;
+    color: $c-gray;
+  }
+
+  &__right-side {
+    letter-spacing: 1px;
+    line-height: 32px;
+    max-width: 480px;
+    font-size: 19px;
+    color: $c-gray;
+    :last-child {
+      margin-bottom: 0;
+    }
+    & p {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.left-side {
+  &__text {
+    margin-bottom: 32px;
+    letter-spacing: $ls-base + px;
+    line-height: 38px;
+    font-size: $fs-h2 + px;
+  }
+}

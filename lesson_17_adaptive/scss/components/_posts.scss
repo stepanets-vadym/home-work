@@ -1,0 +1,36 @@
+.posts {
+  &__wrapper {
+    margin-bottom: 155px;
+  }
+
+  &__header-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+
+  &__title {
+    font-size: $fs-h2 + px;
+    letter-spacing: $ls-base + px;
+  }
+
+  &__link {
+    color: $c-gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    letter-spacing: $ls-base + px;
+  }
+
+  &__icon{
+    margin-left: 5px;
+  }
+
+  &__card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+}
+

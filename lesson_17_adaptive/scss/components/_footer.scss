@@ -1,0 +1,54 @@
+.footer {
+  background-color: $c-footer;
+
+  &__wrapper {
+    justify-content: space-between;
+    padding-bottom: 128px;
+    padding-top: 128px;
+    display: flex;
+  }
+
+  &__title {
+    font-size: $fs-h1 + px;
+    margin-bottom: 48px;
+    letter-spacing: 3px;
+  }
+
+  &__phone {
+    letter-spacing: $ls-base + px;
+    margin-bottom: 26px;
+  }
+
+  &__email {
+    letter-spacing: $ls-base + px;
+  }
+
+  &__links-block {
+    flex-direction: column;
+    display: flex;
+  }
+
+  &__law-block {
+    align-items: flex-end;
+    display: flex;
+  }
+
+  &__law {
+    letter-spacing: 1px;
+    line-height: 18px;
+    max-width: 208px;
+    font-size: 12px;
+  }
+}
+
+.links-block {
+  &__item {
+    letter-spacing: $ls-base + px;
+    padding: 5px;
+    margin-bottom: 34px;
+    color: $c-black;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

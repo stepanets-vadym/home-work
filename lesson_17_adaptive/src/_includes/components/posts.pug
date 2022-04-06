@@ -1,0 +1,11 @@
+mixin posts()
+  .posts
+    .posts__wrapper.container
+      .posts__header-block
+        h3.posts__title Latest Posts
+        a.e-link.posts__link(href="#") View All 
+          +icon( { name:"#icon-Arrow-1", classes:"info__icon posts__icon"} )
+      .posts__card 
+        +blockCard("./assets/img/Interface_Design.png","","Interface Design","8 June, 2020","UX traffic light colours","UI has to make a huge visual difference between warning, an alert and a success.","card__image-block")
+        +blockCard("./assets/img/Technology.png","","Technology","6 May, 2020","Using UX Design to Build a Sustainable Future","Transformation has to be driven by everybody, not just by climate groups.","card__image-block")
+        +blockCard("./assets/img/Visual_Design.png","","Visual Design","8 June, 2020","Creativity vs. UX","Is it possible to create a delightful user experience without following best UX practices?","card__image-block")

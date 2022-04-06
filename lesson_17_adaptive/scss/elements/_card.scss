@@ -1,0 +1,35 @@
+.card {
+  &__subtitel {
+    letter-spacing: $ls-base + px;
+    justify-content: space-between;
+    margin-bottom: 26px;
+    align-items: center;
+    display: flex;
+  }
+
+  &__title {
+    letter-spacing: $ls-base + px;
+    font-size: $fs-h2 + px;
+    line-height: 38px;
+    min-height: 100px;
+  }
+
+  &__image-block {
+    margin-bottom: 30px;
+    overflow: hidden;
+    height: 250px;
+  }
+
+  &__text {
+    color: $c-text-gray;
+    letter-spacing: 1px;
+  }
+}
+
+.subtitle {
+  &__content {
+    letter-spacing: $ls-base + px;
+    font-size: $fs-subtitle + px;
+    color: $c-gray;
+  }
+}

@@ -1,0 +1,9 @@
+mixin link(args={})
+  - var linkClasses = args.classes || "e-link"
+  - var linkHref = args.href || "#"
+  - var linkText = args.text || "default link text"
+  
+
+  a.e-link(class=linkClasses href=linkHref)&attributes(attributes)= linkText
+    block
+    

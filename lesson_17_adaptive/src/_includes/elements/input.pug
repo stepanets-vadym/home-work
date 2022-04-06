@@ -1,0 +1,4 @@
+mixin input(args={})
+  - var inptype = args.type || "text"
+  
+  input.form__input(type= inptype)&attributes(attributes)
