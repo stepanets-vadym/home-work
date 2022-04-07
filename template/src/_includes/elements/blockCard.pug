@@ -1,0 +1,15 @@
+mixin blockCard(src, alt, info, date, cardTitle, text, imageClass)
+  //- -var cardDate = args.text || "text not loaded"
+  //- -var cardTitle = args.title || "text not loaded"
+  //- -var cardInfo = args.text || "text not loaded"
+
+  .card__wrapper
+    +imageBlock( {src,alt,classlist:imageClass} )
+    .card__subtitel 
+      .subtitle__info.subtitle__content= info
+      .subtitle__date.subtitle__content= date
+    .card__content
+      h2.card__title= cardTitle
+      .card__text= text
+
+
