@@ -1,14 +1,14 @@
 new Swiper('.swiper',{
-  mousewheel: {
-    sensitivity: 1,
-    // eventsTarget: '.swiper-slide'
-  },
+  // mousewheel: {
+  //   sensitivity: 1,
+  //   // eventsTarget: '.swiper-slide'
+  // },
 
   spaceBetween:32,
 
   loop:true,
 
-  freeMode:true,
+  // freeMode:true,
 
   // autoHeight: true,
 

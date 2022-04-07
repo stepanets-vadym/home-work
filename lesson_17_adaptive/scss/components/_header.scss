@@ -8,9 +8,9 @@
   &__wrapper {
     justify-content: space-between;
     background-color: $c-white;
+    padding-bottom: 95px;
     align-items: center;
     padding-top: 95px;
-    padding-bottom: 95px;
     flex-wrap: wrap;
     display: flex;
   }
@@ -19,49 +19,14 @@
     display: flex;
   }
 
+  &__icon-block {
+    height: fit-content;
+  }
   &__search-icon {
     position: relative;
-    z-index: 10;
-    font-size: 16px;
     color: $c-black;
+    font-size: 16px;
+    display: flex;
+    z-index: 10;
   }
 }
-
-
-
-.header {
-
-  &__wrapper {
-  }
-
-  &__block {
-  }
-
-  &__burger{
-    display: none;
-  }
-
-  &__navigation {
-  }
-
-  &__icon-block {
-  }
-
-  &__search-icon {
-  }
-
-  &__icon {
-  }
-}
-
-.navigation {
-
-  &__list {
-  }
-
-  &__link {
-  }
-}
-.list-item {
-}
-
