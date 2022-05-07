@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/favico/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>js DOM</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="header__wrapper wrapper">
+          <nav class="header__navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Home</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">About</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Contact</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Other</a>
+              </li>
+            </ul>
+            <button
+              class="navigation__btn button js-toggle-registration-btn"
+              type="button"
+            >
+              <span>Sign Up</span>
+            </button>
+          </nav>
+          <h1 class="header__title">Java Script - DOM</h1>
+        </div>
+      </header>
+      <div class="content">
+        <div class="content__wrapper wrapper">
+          <h2 class="content__title">TODO list</h2>
+          <div class="content__active">
+            <input
+              class="input content__input"
+              id="js-todo-input"
+              type="text"
+              placeholder="something"
+            />
+            <button
+              type="button"
+              class="content__btn button"
+              id="js-todo-button"
+            >
+              <span> Add </span>
+            </button>
+          </div>
+          <ul class="content__list list" id="js-todo-list"></ul>
+        </div>
+      </div>
+      <div class="modal" id="js-registration-modal">
+        <!-- Form -->
+        <form id="js-form" class="form" method="post">
+          <div class="form__title-block">
+            <h2 class="form__title">Registration</h2>
+            <button
+              type="button"
+              class="form__title-btn button js-toggle-registration-btn"
+            >
+              <span>X</span>
+            </button>
+          </div>
+          <!-- Name -->
+          <label class="form__label">
+            <span class="form__subtitle"> Name </span>
+            <input
+              name="firstName"
+              class="form__input"
+              type="text"
+              id="js-registration-form-firstName"
+            />
+          </label>
+          <!-- Email -->
+          <label class="form__label">
+            <span class="form__subtitle"> Email </span>
+            <input
+              name="email"
+              class="form__input"
+              type="email"
+              id="js-registration-form-email"
+            />
+          </label>
+          <!-- Password -->
+          <label class="form__label">
+            <span class="form__subtitle"> Password </span>
+            <input
+              name="password"
+              class="form__input"
+              type="password"
+              id="js-registration-form-password"
+            />
+          </label>
+          <!-- Repeat Password -->
+          <label class="form__label">
+            <span class="form__subtitle"> Repeat password </span>
+            <input
+              name="RepeatPassword"
+              class="form__input"
+              type="password"
+              id="js-registration-form-RepeatPassword"
+            />
+          </label>
+
+          <!-- Submit -->
+          <button type="submit" class="form__btn button">
+            <span>Sign Up</span>
+          </button>
+        </form>
+      </div>
+      <div class="playList">
+        <div class="playList__wrapper wrapper">
+          <ol class="playList__list" id="js-playList-list"></ol>
+        </div>
+      </div>
+      <!-- <div class="traffic-lights">
+        <div class="traffic-lights__wrapper">
+          <ul class="traffic-lights__lights">
+            <li class="traffic-lights__red light" id="js-lights-red"></li>
+            <li class="traffic-lights__yellow light" id="js-lights-yellow"></li>
+            <li class="traffic-lights__green light" id="js-lights-green"></li>
+          </ul>
+          <button type="button" class="traffic-lights__btn button " id="js-traffic-Lights-btn" ><span>switch</span></button>
+        </div>
+      </div> -->
+      <div class="lights">
+        <div class="lights__item js-light"></div>
+        <div class="lights__item js-light"></div>
+        <div class="lights__item js-light"></div>
+      </div>
+      <button type="button" class="lights__button" id="js-light-btn">
+        <span>switch</span>
+      </button>
+    </div>
+
+    <script defer type="module" src="./index.js"></script>
+  </body>
+</html>

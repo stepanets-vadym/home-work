@@ -1,0 +1,74 @@
+@import './header';
+@import './footer';
+@import './form';
+@import './traffic-lights';
+
+
+.app{
+  height: 300vh;
+  background-color: #88CFA8;
+}
+.wrapper{
+  max-width: 1440px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+
+.button {
+  height: 40px;
+  padding: 0 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+
+.content {
+  
+  &__wrapper{
+    color: $c-white;
+  background-color: $c-gray;
+  padding: 10px;
+  }
+
+  &__title{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    padding: 30px 10px;
+  }
+
+  &__active{ 
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    margin-bottom: 20px;
+
+  }
+
+
+  &__btn { 
+    font-size: 20px;
+    margin-left: 15px;
+
+  }
+
+
+}
+
+
+.list {
+  &__item{
+    margin-bottom: 10px;
+    &:hover{
+      color: red;
+    }
+  }
+
+  &__btn {
+    margin-left: 15px;
+    padding: 5px;
+    
+  }
+}

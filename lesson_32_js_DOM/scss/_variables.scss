@@ -1,0 +1,25 @@
+// COLORS
+$c-black: rgb(0, 0, 0);
+$c-gray: rgb(123, 123, 123);
+$c-orange: #FD8061;
+$c-white: #FFFFFF;
+$c-text-gray: #565656;
+$c-footer: #f4f4f4;
+$c-green: #72A75B;
+
+// Font
+$f-lato: 'Lato', sans-serif;
+$f-Red-hot: 'Red Hat Display', sans-serif;
+// Font size
+$fs-base: 16;
+$fs-h1: 48;
+$fs-h2: 24;
+$fs-subtitle:12;
+// $fs-h1: 48;
+// Letter spacing
+$ls-base: 2;
+// Transition
+$t-normal: .35s cubic-bezier(.4,0,.2,1);
+
+// Box Shadow
+$bs-normal: 3px 4px 7px rgba($c-black, .1);

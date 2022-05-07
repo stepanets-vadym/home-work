@@ -1,0 +1,4 @@
+mixin linkBlock(href,text,iconName)
+  .services__link-block
+    +link({ href,text, })(class="services__link")
+    +icon({ name:iconName, classes:"services__icon" })
