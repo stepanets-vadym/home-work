@@ -135,6 +135,9 @@ const registration = (event) => {
       console.log(response);
       document.getElementById('js-message__name').innerText = firstName;
       event.target.reset();
+      if (response.success == false) {
+        document.getElementById('js-message__alert').innerText = 'Помилка'
+      }
       document.getElementById('js-form').classList.add('hide');
       document.getElementById('js-message').classList.add('show');
       document.getElementById('js-message__info').innerText =

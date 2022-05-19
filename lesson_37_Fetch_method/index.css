@@ -613,6 +613,7 @@ body {
 }
 .reregistration-form__select {
   height: 36px;
+  cursor: pointer;
 }
 .reregistration-form__button-block {
   display: flex;
