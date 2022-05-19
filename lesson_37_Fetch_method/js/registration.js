@@ -120,26 +120,26 @@ const registration = (event) => {
   
   console.log(body);
 
-  // fetch(
-  //   'https://beetroot-solodkui.herokuapp.com/beetroot-solodkui/users/registration',
-  //   {
-  //     method: 'POST',
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //     },
-  //     body: JSON.stringify(body),
-  //   }
-  // )
-  //   .then((res) => res.json())
-  //   .then((response) => {
-  //     console.log(response);
-  //     document.getElementById('js-message__name').innerText = firstName;
-  //     event.target.reset();
-  //     document.getElementById('js-form').classList.add('hide');
-  //     document.getElementById('js-message').classList.add('show');
-  //     document.getElementById('js-message__info').innerText =
-  //       response.message[language];
-  //   });
+  fetch(
+    'https://beetroot-solodkui.herokuapp.com/beetroot-solodkui/users/registration',
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(body),
+    }
+  )
+    .then((res) => res.json())
+    .then((response) => {
+      console.log(response);
+      document.getElementById('js-message__name').innerText = firstName;
+      event.target.reset();
+      document.getElementById('js-form').classList.add('hide');
+      document.getElementById('js-message').classList.add('show');
+      document.getElementById('js-message__info').innerText =
+        response.message[language];
+    });
 };
 
 export { registration };
