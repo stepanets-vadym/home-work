@@ -1,0 +1,26 @@
+{
+  "name": "beetroot_pirate_project",
+  "version": "1.0.0",
+  "description": "npm i\r sass watcher\r pug -w index.pug",
+  "main": "index.js",
+  "scripts": {
+    "start": "pug -w ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stepanets-vadym/pirate_project.git"
+  },
+  "keywords": [
+    "pirate"
+  ],
+  "author": "Stepanets Vadym",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stepanets-vadym/pirate_project/issues"
+  },
+  "homepage": "https://github.com/stepanets-vadym/pirate_project#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "simptip": "^1.0.4"
+  }
+}

@@ -1,0 +1,72 @@
+.navigation {
+  @include media("<=tablet") {
+    background-color: rgba($color: #56b6bb, $alpha: 0.95);
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    padding: 120px 30px 30px 30px;
+    transition: left 0.3s ease 0s;
+    overflow: auto;
+
+    &._active {
+      left: 0;
+    }
+
+    &::before {
+      content: "";
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      max-height: 114px;
+      height: auto;
+      background-color: $c-white;
+      z-index: 2;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &__list > li {
+      margin: 0 auto 30px auto;
+      &:first-child {
+        margin-left: auto;
+      }
+      &:last-child {
+        margin-bottom: 0;
+        margin-right: auto;
+      }
+    }
+
+    &__link {
+      font-size: 30px;
+      color: $c-white;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    font-weight: 500;
+    padding: 3px;
+    color: $c-black;
+  }
+}
+.list-item {
+  margin-left: 54px;
+  &:first-child {
+    margin-left: 0;
+  }
+  @include media("<=desktop") {
+    margin-left: 40px;
+  }
+}

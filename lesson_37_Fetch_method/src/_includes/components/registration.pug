@@ -1,0 +1,83 @@
+mixin registration (args ={})
+  form(method="post" novalidate).reregistration-form#js-form
+    .reregistration-form__wrapper 
+      h2.reregistration-form__title Реєстрація
+      .reregistration-form__block 
+        //- Firstname 
+        +label({
+          classlabel: 'reregistration-form__label',
+          classlabelTitle: 'reregistration-form__label-title',
+          text: 'Ваше ім\'я',
+          type: 'text',
+          classInput: 'form__input reregistration-form__input',
+          nameInput: 'firstName',
+          idInput: 'js-registration-form-firstName',
+          placeholderInput: 'Приклад: Артур',
+          classError: 'reregistration-form__error',
+          idError: 'firstName-error'
+        })
+        //- Lastname
+        +label({
+          classlabel: 'reregistration-form__label',
+          classlabelTitle: 'reregistration-form__label-title',
+          text: 'Вашe призвіще',
+          type: 'text',
+          classInput: 'form__input reregistration-form__input',
+          nameInput: 'lastName',
+          idInput: 'js-registration-form-lastName',
+          placeholderInput: 'Приклад: Солодкий',
+          classError: 'reregistration-form__error',
+          idError: 'lastName-error'
+        })
+        //- Email
+        +label({
+          classlabel: 'reregistration-form__label',
+          classlabelTitle: 'reregistration-form__label-title',
+          text: 'Ваша електронна адреса',
+          type: 'email',
+          classInput: 'form__input reregistration-form__input',
+          nameInput: 'email',
+          idInput: 'js-registration-form-email',
+          placeholderInput: 'Приклад: some-name@gmail.com',
+          classError: 'reregistration-form__error',
+          idError: 'email-error'
+        })
+        //- Username
+        +label({
+          classlabel: 'reregistration-form__label',
+          classlabelTitle: 'reregistration-form__label-title',
+          text: 'Ваш Username',
+          type: 'text',
+          classInput: 'form__input reregistration-form__input',
+          nameInput: 'username',
+          idInput: 'js-registration-form-username',
+          placeholderInput: 'Приклад: Aliensky',
+          classError: 'reregistration-form__error',
+          idError: 'username-error',
+        })
+        //- Password
+        +label({
+          classlabel: 'reregistration-form__label',
+          classlabelTitle: 'reregistration-form__label-title',
+          text: 'Вигадайте пароль',
+          type: 'password',
+          classInput: 'form__input reregistration-form__input',
+          nameInput: 'password',
+          idInput: 'js-registration-form-password',
+          placeholderInput: 'Він має бути надійним',
+          classError: 'reregistration-form__error',
+          idError: 'password-error',
+        })
+        //- Select-block
+        .reregistration-form__select-block
+          label.reregistration-form__label-checkbox
+            span.reregistration-form__label-title.reregistration-form__label-checkbox-title SeasonAnimation
+            input(type="checkbox" class='reregistration-form__input-checkbox' name='seasonAnimation')#js-registration-form-checkbox
+          select#js-registration-form-select(name="language").reregistration-form__select
+            option(value="ua" selected ) Українська 
+            option(value="ru") Расейская 
+            option(value="en") English 
+        //- button-block
+        .reregistration-form__button-block
+          button(type='submit' class='e-button reregistration-form__button')#js-reregistration-form__button
+            span Зареєструватися

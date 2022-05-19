@@ -1,0 +1,18 @@
+mixin label(args={})
+  -var labelClass = args.classlabel || ""
+  -var labelTitleClass = args.classlabelTitle || ""
+  -var labelText = args.text || "default"
+  -var inputType = args.type || "text"
+  -var inputClass = args.classInput || "form__input"
+  -var inputName = args.nameInput || ""
+  -var inputId = args.idInput || ""
+  -var inputPlaceholder = args.placeholderInput || ""
+  -var errrorClass = args.classError || ""
+  -var errrorId = args.idError || ""
+
+
+
+  label(class=labelClass) 
+    span(class=labelTitleClass)=labelText 
+    input(type=inputType class=inputClass name=inputName id=inputId placeholder=inputPlaceholder)
+    div(class=errrorClass id=errrorId)

@@ -1,0 +1,11 @@
+mixin button(args={})
+  - const title = args.title || 'Default text'
+  - const type = args.type || 'button'
+  - const classList = args.classes || 'e-button'
+  - const id = args.id || ''
+
+
+
+  button(type=type id=id class=classList)&attributes(attributes)
+    span= title
+    

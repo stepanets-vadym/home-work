@@ -1,0 +1,57 @@
+body {
+  background-image: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(35%, #090979), to(#00d4ff));
+  background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+  position: relative;
+  max-width: 1400px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.app {
+  width: 400px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: green;
+  border-radius: 20px;
+}
+
+.app__toggle {
+  margin-top: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.app__toggle > span {
+  font-size: 18px;
+}
+
+.app__edit {
+  color: white;
+  font-size: 24px;
+}
